@@ -1,3 +1,4 @@
+const axios = require("axios");
 const express = require("express");
 const router = express.Router();
 var spellData;
@@ -17,8 +18,16 @@ router.param("spell", function (req, res, next, id) {
   next();
 });
 
-router.get("/", (req, res) => {
-  res.send(spellData);
+router.get("/", async (req, res) => {
+  try {
+    const response = await axios.get(
+      "https://harry-potter-api-en.onrender.com/spells"
+    );
+    res.send(response.data);
+  } catch (error) {
+    console.log(error);
+    res.status(500).send("Error retrieving data from API");
+  }
 });
 
 router.get("/:spell", (req, res) => {
