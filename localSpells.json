@@ -1,0 +1,84 @@
+{
+  "spells": [
+    {
+      "id": 1,
+      "name": "wingardiumLeviosa",
+      "book": "On the subject of Muggles",
+      "bookAccess": "any",
+      "countryOfOrigin": "England",
+      "spellPower": 2
+    },
+    {
+      "id": 2,
+      "name": "expelliarmus",
+      "book": "The Standard Book of Spells",
+      "bookAccess": "any",
+      "countryOfOrigin": "England",
+      "spellPower": 2
+    },
+    {
+      "id": 3,
+      "name": "sectumsempra",
+      "book": "Advanced Potion-Making",
+      "bookAccess": "restricted",
+      "countryOfOrigin": "England",
+      "spellPower": 4
+    },
+    {
+      "id": 4,
+      "name": "accio",
+      "book": "The Standard Book of Spells",
+      "bookAccess": "any",
+      "countryOfOrigin": "England",
+      "spellPower": 1
+    },
+    {
+      "id": 5,
+      "name": "avadaKedavra",
+      "book": "The Dark Arts Outsmarted",
+      "bookAccess": "forbidden",
+      "countryOfOrigin": "unknown",
+      " spellPower": 10
+    },
+    {
+      "id": 6,
+      "name": "crucio",
+      "book": "The Dark Arts Outsmarted",
+      "bookAccess": "forbidden",
+      "countryOfOrigin": "unknown",
+      "spellPower": 8
+    },
+    {
+      "id": 7,
+      "name": "imperio",
+      "book": "The Dark Arts Outsmarted",
+      "bookAccess": "forbidden",
+      "countryOfOrigin": "unknown",
+      "spellPower": 9
+    },
+    {
+      "id": 8,
+      "name": "expectoPatronum",
+      "book": "The Standard Book of Spells",
+      "bookAccess": "any",
+      "countryOfOrigin": "England",
+      "spellPower": 3
+    },
+    {
+      "id": 9,
+      "name": "reparo",
+      "book": "Magical Drafts and Potions",
+      "bookAccess": "any",
+      "countryOfOrigin": "England",
+      "spellPower": 1
+    },
+    {
+      "id": 10,
+      "name": "oculusReparo",
+      "book": "A Beginner's Guide to Transfiguration",
+      "bookAccess": "any",
+      "countryOfOrigin": "England",
+      "spellPower": 2
+    }
+  ]
+}
