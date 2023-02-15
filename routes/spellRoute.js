@@ -8,13 +8,13 @@ let fs = require("fs");
 const rawSpellData = fs.readFileSync("./localSpells.json", "utf-8");
 const data = JSON.parse(rawSpellData);
 
-router.param("spell", function (req, res, next, id) {
-  // Once the database is loaded, I will need to use mongoose Query methods to access data.
-  const spellArray = Object.values(data.spells);
-  req.spells = spellArray;
-  req.spell = req.spells.find((spell) => spell.id === Number(id));
-  next();
-});
+// router.param("spell", function (req, res, next, id) {
+//   // Once the database is loaded, I will need to use mongoose Query methods to access data.
+//   const spellArray = Object.values(data.spells);
+//   req.spells = spellArray;
+//   req.spell = req.spells.find((spell) => spell.id === Number(id));
+//   next();
+// });
 
 router.get("/", (req, res) => {
   res.send("Welcome to the Spell Channel!");
@@ -29,44 +29,27 @@ router.get("/generate-spell-data", async (req, res) => {
   //   res.status(500).send("Error retrieving data from API");
   // }
   // Test by creating in mongodb
+  for (let i = 0; i < data.spells.length; i++) {
+    let MagicalTheory = new Book({
+      title: "Magical Theory",
+      author: "Adalbert Waffling",
+      bookAccess: "any",
+      spellsContained: [],
+      countryOfOrigin: "",
+    });
 
-  // let MagicalTheory = new Book({
-  //   title: "Magical Theory",
-  //   author: "Adalbert Waffling",
-  //   bookAccess: "any",
-  //   spellsContained: [lumos._id],
-  //   countryOfOrigin: "",
-  // });
-  // let lumos = new Spell({
-  //   name: "Lumos",
-  //   book: MagicalTheory._id,
-  //   spellPower: 1,
-  // });
+    let lumos = new Spell({
+      name: "Lumos",
+      book: [],
+      spellPower: 1,
+    });
 
-  // MagicalTheory.spellsContained.push(lumos);
-  // lumos.book.push(MagicalTheory);
-  // MagicalTheory.save();
-  // lumos.save();
-  // res.send("Spell and Book generated.");
-  let MagicalTheory = new Book({
-    title: "Magical Theory",
-    author: "Adalbert Waffling",
-    bookAccess: "any",
-    spellsContained: [],
-    countryOfOrigin: "",
-  });
+    MagicalTheory.spellsContained.push(lumos._id);
+    lumos.book.push(MagicalTheory._id);
 
-  let lumos = new Spell({
-    name: "Lumos",
-    book: [],
-    spellPower: 1,
-  });
-
-  MagicalTheory.spellsContained.push(lumos._id);
-  lumos.book.push(MagicalTheory._id);
-
-  lumos.save();
-  MagicalTheory.save();
+    lumos.save();
+    MagicalTheory.save();
+  }
   res.send("Generated");
 });
 
