@@ -18,11 +18,9 @@ router.param("spell", function (req, res, next, id) {
   next();
 });
 
-router.get("/", async (req, res) => {
+router.get("/generate-spells", async (req, res) => {
   try {
-    const response = await axios.get(
-      "https://harry-potter-api-en.onrender.com/spells"
-    );
+    const response = await axios.get("https://api.potterdb.com/v1/spells");
     res.send(response.data);
   } catch (error) {
     console.log(error);

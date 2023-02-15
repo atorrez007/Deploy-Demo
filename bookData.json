@@ -1,0 +1,107 @@
+[
+  {
+    "title": "The Standard Book of Spells",
+    "author": "Miranda Goshawk",
+    "bookAccess": "any",
+    "spellsContained": [],
+    "countryOfOrigin": ""
+  },
+  {
+    "title": "A Beginner's Guide to Transfiguration",
+    "author": "Emeric Switch",
+    "bookAccess": "any",
+    "spellsContained": [],
+    "countryOfOrigin": ""
+  },
+  {
+    "title": "One Thousand Magical Herbs and Fungi",
+    "author": "Phyllida Spore",
+    "bookAccess": "any",
+    "spellsContained": [],
+    "countryOfOrigin": ""
+  },
+  {
+    "title": "Magical Theory",
+    "author": "Adalbert Waffling",
+    "bookAccess": "any",
+    "spellsContained": [],
+    "countryOfOrigin": ""
+  },
+  {
+    "title": "The Dark Forces: A Guide to Self-Protection",
+    "author": "Quentin Trimble",
+    "bookAccess": "any",
+    "spellsContained": [],
+    "countryOfOrigin": ""
+  },
+  {
+    "title": "The Essential Defence Against the Dark Arts",
+    "author": "Armando Dippet",
+    "bookAccess": "restricted",
+    "spellsContained": [],
+    "countryOfOrigin": ""
+  },
+  {
+    "title": "Quidditch Through the Ages",
+    "author": "Kennilworthy Whisp",
+    "bookAccess": "any",
+    "spellsContained": [],
+    "countryOfOrigin": ""
+  },
+  {
+    "title": "Fantastic Beasts and Where to Find Them",
+    "author": "Newt Scamander",
+    "bookAccess": "any",
+    "spellsContained": [],
+    "countryOfOrigin": ""
+  },
+  {
+    "title": "The Tales of Beedle the Bard",
+    "author": "Beedle the Bard",
+    "bookAccess": "any",
+    "spellsContained": [],
+    "countryOfOrigin": ""
+  },
+  {
+    "title": "Ancient Runes Made Easy",
+    "author": "Bathilda Bagshot",
+    "bookAccess": "any",
+    "spellsContained": [],
+    "countryOfOrigin": ""
+  },
+  {
+    "title": "Famous Wizard Cards",
+    "author": "Non Applicable",
+    "bookAccess": "any",
+    "spellsContained": [],
+    "countryOfOrigin": ""
+  },
+  {
+    "title": "Hogwarts, A History",
+    "author": "Bathilda Bagshot",
+    "bookAccess": "restricted",
+    "spellsContained": [],
+    "countryOfOrigin": ""
+  },
+  {
+    "title": "Intermediate Transfiguration",
+    "author": "Emeric Switch",
+    "bookAccess": "restricted",
+    "spellsContained": [],
+    "countryOfOrigin": ""
+  },
+  {
+    "title": "Magical Drafts and Potions",
+    "author": "Arsenius Jigger",
+    "bookAccess": "any",
+    "spellsContained": [],
+    "countryOfOrigin": ""
+  },
+  {
+    "title": "Magical Me",
+    "author": "Gilderoy Lockhart",
+    "bookAccess": "any",
+    "spellsContained": [],
+    "countryOfOrigin": ""
+  }
+]
