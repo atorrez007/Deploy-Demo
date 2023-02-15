@@ -7,7 +7,7 @@ const bookSchema = new Schema({
   author: { type: String },
   bookAccess: { type: String },
   countryOfOrigin: { type: String },
-  spellsContained: { type: Schema.Types.ObjectId, ref: "Spell" },
+  spellsContained: [{ type: Schema.Types.ObjectId, ref: "Spell" }],
 });
 
 const Book = mongoose.model("Book", bookSchema);

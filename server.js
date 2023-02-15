@@ -2,7 +2,13 @@ var express = require("express");
 var port = 3000;
 var bodyParser = require("body-parser");
 var spells = require("./routes/spellRoute");
-var index = require("./routes/index");
+
+const mongoose = require("mongoose");
+
+mongoose.connect("mongodb://localhost/wizardry", {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+});
 
 var app = express();
 
@@ -22,7 +28,6 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static("public"));
 app.use(express.static("node_modules"));
 
-app.use("/", index);
 app.use("/spells", spells);
 
 // app.get("/", (req, res) => {
